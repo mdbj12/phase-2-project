@@ -1,0 +1,17 @@
+.homepage h2 {
+    text-align: center;
+}
+
+.homepage p {
+    text-align: center;
+    font-family:'Times New Roman', Times, serif;
+    font-size: smaller;
+    display: flex;
+    margin-left: 40%;
+}
+
+.homepage ul {
+    display: flex;
+    justify-content: left;
+    list-style: none;
+}
