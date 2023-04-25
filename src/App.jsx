@@ -22,13 +22,17 @@ function App(){
         .then(data => setCartItems(data))
     }, [])
 
+    const updateCart = (arg1) => {
+        setCartItems([...cartItems, arg1])
+    }
+
     return (
         <div>
             <BrowserRouter>
             <NavBar />
                 <Routes>
                     <Route path='/' element={<HomePage />} />
-                    <Route path='Menu' element={<Menu items={items} />} />
+                    <Route path='Menu' element={<Menu items={items} updateCart={updateCart} />} />
                     <Route path='Cart' element={<Cart cartItems={cartItems} />} />
                     <Route path='Login' element={<Login />} />
                 </Routes>

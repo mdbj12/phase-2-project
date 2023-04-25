@@ -1,6 +1,6 @@
 import React from "react";
 
-const Items = ({item}) => {
+const Items = ({item, updateCart}) => {
 
     const handleClick = () => {
         const inCart = {
@@ -15,7 +15,7 @@ const Items = ({item}) => {
             body: JSON.stringify(inCart)
         })
         .then((res) => res.json())
-        .then((data) => data)
+        .then((data) => updateCart(data))
     }
 
     return (

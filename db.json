@@ -57,5 +57,10 @@
     }
   ],
   "cart": [
+    {
+      "name": "Cold Brew",
+      "price": 5.25,
+      "id": 1
+    }
   ]
 }
