@@ -5,9 +5,10 @@ const Items = ({item, updateCart}) => {
     const handleClick = () => {
         const inCart = {
             name: item.name,
-            price: item.price
+            price: item.price,
+            amount: item.amount
         }
-        fetch('http://localhost:3005/cart', {
+        fetch('http://localhost:3005/Cart', {
             method: "POST",
             headers: {
                 "Content-Type": "Application/json"
@@ -24,7 +25,9 @@ const Items = ({item, updateCart}) => {
             <h2>
                 <p>
                     {item.name}
+                    <br/>
                     ${item.price}
+                    <br/>
                 </p>
                 <button onClick={handleClick} >
                     Add to Cart
