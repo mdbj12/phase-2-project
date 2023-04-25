@@ -1,9 +1,13 @@
 import React from 'react';
+import InCart from './InCartItems';
 
-const Cart = () => {
+const Cart = ({cartItems}) => {
+    const renderCart = cartItems.map((cartEle) => {
+        return <InCart cartEle={cartEle} key={cartEle.id} />
+    })
     return (
         <div>
-            <h1>Cart</h1>
+            <h1>{renderCart}</h1>
         </div>
     )
 }
