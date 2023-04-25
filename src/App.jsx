@@ -4,7 +4,6 @@ import HomePage from './HomePage/HomePage';
 import Menu from './Menu/Menu';
 import NavBar from './NavBar/NavBar';
 import Cart from './InCart/Cart'
-import Login from './Login/Login';
 
 function App(){
 
@@ -34,7 +33,6 @@ function App(){
                     <Route path='/' element={<HomePage />} />
                     <Route path='Menu' element={<Menu items={items} updateCart={updateCart} />} />
                     <Route path='Cart' element={<Cart cartItems={cartItems} />} />
-                    <Route path='Login' element={<Login />} />
                 </Routes>
             </BrowserRouter>
         </div>
