@@ -1,4 +1,5 @@
 import React from "react";
+import './MenuItems.css';
 
 const MenuItems = ({item, updateCart}) => {
 
@@ -18,10 +19,9 @@ const MenuItems = ({item, updateCart}) => {
         .then((res) => res.json())
         .then((data) => updateCart(data))
     }
-
+    
     return (
-        <div>
-            <h1>Drinks</h1>
+        <div className="items">
             <h2>
                 <p>
                     {item.name}
@@ -29,7 +29,7 @@ const MenuItems = ({item, updateCart}) => {
                     ${item.price}
                     <br/>
                 </p>
-                <button onClick={handleClick} >
+                <button onClick={handleClick} className="button">
                     Add to Cart
                 </button>
             </h2>

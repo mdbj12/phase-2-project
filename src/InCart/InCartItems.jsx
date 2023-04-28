@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import './InCart.css';
 
 const InCart = ({cartEle, handleDelete}) => {
 
@@ -25,18 +26,17 @@ const InCart = ({cartEle, handleDelete}) => {
     }
 
     return (
-        <div>
-            <h1>In Cart</h1>
-            <h2>
+        <div className='inCart'>
+            <h1>
                 {cartEle.name}
                 <br/>
                  Total Price: ${cartEle.price * amount}
                 <br/>
-                <button onClick={handleAmount} >
+                <button onClick={handleAmount} className='button'>
                     In Cart: {amount}
                 </button>
-            </h2>
-            <button onClick={del} >
+            </h1>
+            <button onClick={del} className='button'>
                 Remove Item
             </button>
         </div>

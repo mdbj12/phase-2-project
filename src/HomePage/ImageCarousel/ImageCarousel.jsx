@@ -8,10 +8,10 @@ import './ImageCarousel.css';
 const ImageCarousel = () => {
     return (
         <div className="carousel">
-            <button className="carousel-button-prev"></button>
-            <button className="carousel-button-next"></button>
+            <button className="carousel-button prev">&#8656;</button>
+            <button className="carousel-button next">&#8658;</button>
             <ul>
-                <li className="slide">
+                <li className="slide" data-active>
                     <img src={kaigocup} alt="kaigoCup" />
                 </li>
                 <li className="slide">

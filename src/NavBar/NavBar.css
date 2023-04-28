@@ -19,8 +19,14 @@
     display: flex;
     justify-content: flex-start;
     align-items: center;
+    padding: 20px;
+    text-decoration: none;
+    
 }
 
+.link:hover {
+    background-color: aliceblue;
+}
 
 .navbar-links {
     flex: 1;

@@ -5,7 +5,9 @@ const Menu = ({items, updateCart}) => {
 
     const renderItems = items.map((item)=> {
         return (
-            <MenuItems item={item} key={item.id} updateCart={updateCart} />
+            <div>
+                <MenuItems item={item} key={item.id} updateCart={updateCart} />
+            </div>
         )
     })
     return (

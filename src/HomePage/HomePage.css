@@ -17,7 +17,7 @@
     font-family:'Times New Roman', Times, serif;
     font-size: smaller;
     display: flex;
-    margin-left: 20%;
+    margin-left: 5%;
     width: 500px;
 }
 
@@ -25,5 +25,5 @@
     display: flex;
     justify-content: left;
     list-style: none;
-    width: 200px;
+    width: 500px;
 }
