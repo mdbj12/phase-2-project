@@ -7,7 +7,9 @@ const Cart = ({cartItems, handleDelete}) => {
     })
     return (
         <div>
-            <h1>{renderCart}</h1>
+            <div>
+                <h1>{renderCart}</h1>
+            </div>
         </div>
     )
 }

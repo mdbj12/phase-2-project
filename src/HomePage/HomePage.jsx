@@ -1,11 +1,13 @@
 import React from "react";
-import '../HomePage/HomePage.css'
+import ImageCarousel from "./ImageCarousel/ImageCarousel";
+import '../HomePage/HomePage.css';
 
 const HomePage = () => {
     return (
         <div className="homepage">
-            <h1>Home</h1>
-            <h2>Welcome
+            <h1>Welcome to this totally random coffee shop!</h1>
+            <h2>
+                <ImageCarousel />
                 <p>
                     What started out in SoHo as a passion project between two friends gradually introduced us to a new way of life.
                     We admired how the community accepted us with open arms and want to share all the culture and unique experiences coffee has to offer with everyone.

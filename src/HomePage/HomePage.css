@@ -1,5 +1,15 @@
+.homepage {
+    width: auto;
+}
+
+.homepage h1 {
+    text-align: center;
+
+}
+
 .homepage h2 {
     text-align: center;
+    display: flex;
 }
 
 .homepage p {
@@ -7,11 +17,13 @@
     font-family:'Times New Roman', Times, serif;
     font-size: smaller;
     display: flex;
-    margin-left: 40%;
+    margin-left: 20%;
+    width: 500px;
 }
 
 .homepage ul {
     display: flex;
     justify-content: left;
     list-style: none;
+    width: 200px;
 }

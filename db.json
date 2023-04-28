@@ -67,12 +67,5 @@
       "amount": 1
     }
   ],
-  "Cart": [
-    {
-      "name": "Drip Coffee",
-      "price": 2.75,
-      "amount": 35,
-      "id": 1
-    }
-  ]
+  "Cart": []
 }

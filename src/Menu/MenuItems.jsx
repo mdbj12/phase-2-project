@@ -1,6 +1,6 @@
 import React from "react";
 
-const Items = ({item, updateCart}) => {
+const MenuItems = ({item, updateCart}) => {
 
     const handleClick = () => {
         const inCart = {
@@ -37,4 +37,4 @@ const Items = ({item, updateCart}) => {
     )
 }
 
-export default Items;
+export default MenuItems;

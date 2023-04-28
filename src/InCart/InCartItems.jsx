@@ -30,7 +30,7 @@ const InCart = ({cartEle, handleDelete}) => {
             <h2>
                 {cartEle.name}
                 <br/>
-                 Price: ${cartEle.price}
+                 Total Price: ${cartEle.price * amount}
                 <br/>
                 <button onClick={handleAmount} >
                     In Cart: {amount}
